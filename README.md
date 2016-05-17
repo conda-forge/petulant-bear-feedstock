@@ -5,7 +5,7 @@ Home: https://github.com/ioos/petulant-bear
 
 Package license: GPLv3
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Presents etree interface to netcdf4-python objects using NCML data model
 
@@ -69,9 +69,15 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/petulant-bear-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/petulant-bear-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/petulant-bear-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/petulant-bear-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/petulant-bear-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/petulant-bear-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/petulant-bear/badges/version.svg)](https://anaconda.org/conda-forge/petulant-bear)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/petulant-bear/badges/downloads.svg)](https://anaconda.org/conda-forge/petulant-bear)
 
 
 Updating petulant-bear-feedstock
