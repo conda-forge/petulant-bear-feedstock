@@ -1,41 +1,42 @@
 {% set version = "0.2.0" %}
 
 package:
-    name: petulant-bear
-    version: {{ version }}
+  name: petulant-bear
+  version: {{ version }}
 
 source:
-    git_url: https://github.com/ioos/petulant-bear.git
-    git_tag: v{{ version }}
+  url: https://github.com/ioos/petulant-bear/archive/v{{ version }}.tar.gz
+  sha256: 5e81a3dba05db3e7616d2775d77da526ccf038fad39b590eae82e344eadadb64
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
-
+  number: 1
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - netcdf4
-        - numpy
-        - lxml
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - netcdf4
+    - numpy
+    - lxml
 
 test:
-    imports:
-        - petulantbear
+  imports:
+    - petulantbear
 
 about:
-    home: https://github.com/ioos/petulant-bear
-    license: GPLv3
-    summary: Presents etree interface to netcdf4-python objects using NCML data model
+  home: https://github.com/ioos/petulant-bear
+  license: GPL-3.0
+  license_file: COPYING
+  summary: 'Presents etree interface to netcdf4-python objects using NCML data model'
 
 extra:
-    recipe-maintainers:
-        - benjwadams
-        - daf
-        - kwilcox
-        - lukecampbell
-        - ocefpaf
+  recipe-maintainers:
+    - benjwadams
+    - daf
+    - kwilcox
+    - lukecampbell
+    - ocefpaf
